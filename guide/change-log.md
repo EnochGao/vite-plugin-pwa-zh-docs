@@ -13,6 +13,53 @@ outline: deep
 - [@vite-pwa/astro](https://github.com/vite-pwa/astro#-install)
 - [@vite-pwa/nuxt](https://github.com/vite-pwa/nuxt#-install)
 - [@vite-pwa/assets-generator](https://github.com/vite-pwa/assets-generator#-install)
+- [@vite-pwa/create-pwa](https://github.com/vite-pwa/create-pwa#-usage)
+
+## @vite-pwa/create-pwa <Badge type="tip" text="from v0.6.0" />
+
+From version `v0.6.0`, all the templates to use Vite 6, including also the latest frameworks changes.
+
+Use version `v0.5.0` for Vite 5 and previous versions of the frameworks.
+
+## SvelteKit Single-page App Support <Badge type="tip" text="from v0.6.7" />
+
+From `v0.6.7`, `@vite-pwa/sveltekit` adds support for [single-page apps](https://svelte.dev/docs/kit/single-page-apps), including also:
+- add `static-adapter` fallback in the service worker precache manifest in SPA mode
+- update `globPatterns` to include `__data.json` files when using `static-adapter` with `load` functions
+
+Check the [SvelteKit documentation](/frameworks/sveltekit) for further details.
+
+## Vite 6 support <Badge type="tip" text="from v0.21.1" />
+
+From `v0.21.1`, `vite-plugin-pwa` adds support for Vite 6:
+- should also work with Vite 3, 4 and 5.
+- still not using the Vite 6 [Environment API](https://vite.dev/guide/api-environment).
+
+If you want to use `vite-plugin-pwa` with Vite 6 [Environment API](https://vite.dev/guide/api-environment), check this PR: [feat!: add Vite 6 Environment API support](https://github.com/vite-pwa/vite-plugin-pwa/pull/786): install the `vite-plugin-pwa` version from `pkg-pr-new` using the last commit (click on the commit link in the [pkg-pr-new comment](https://github.com/vite-pwa/vite-plugin-pwa/pull/786#issuecomment-2478777537) ):
+
+::: code-group
+  ```bash [pnpm]
+  pnpm add -D https://pkg.pr.new/vite-plugin-pwa@88b2e45
+  ```
+  ```bash [yarn]
+  yarn add -D https://pkg.pr.new/vite-plugin-pwa@88b2e45
+  ```
+  ```bash [npm]
+  npm i -D https://pkg.pr.new/vite-plugin-pwa@88b2e45
+  ```
+:::
+
+::: info
+`vite-plugin-pwa` should still work with Vite 3, 4 and 5.
+:::
+
+## Workbox 7.3.0 <Badge type="tip" text="from v0.21.0" />
+
+From `v0.21.0`, `vite-plugin-pwa` updates `workbox` to `7.3.0`.
+
+## Workbox 7.3.0 <Badge type="tip" text="from v0.21.0" />
+
+From `v0.21.0`, `vite-plugin-pwa` updates `workbox` to `7.3.0`.
 
 ## Service worker 构建 <Badge type="tip" text="从 v0.20.2" />
 

@@ -52,7 +52,7 @@ const Guide: DefaultTheme.SidebarItem[] = [
     link: '/guide/development',
   },
   {
-    text: '搭建您的第一个Vite PWA项目<sup class="VPBadgeCustom tip">新</sup>',
+    text: '搭建您的第一个Vite PWA项目',
     link: '/guide/scaffolding',
   },
   {
