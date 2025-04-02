@@ -29,41 +29,41 @@ SVG 源文件还可以用于在 HTML 头部链接中设置网站的图标
 我们还建议您添加以下内容:
 
 - 一个适用于 Windows（Edge）的 64x64 图标（PWA Manifest 图标）
-- A 512x512 icon for Android with `purpose: 'any'` (PWA Manifest icon)
-- Avoid using `purpose: 'any maskable'` icon, as it is not supported by all browsers
-- An `favicon.ico` and `favicon.svg`, check [Preset Minimal 2023](#preset-minimal-2023) for more details
+- 一个适用于Android带有`purpose: 'any'` 512x512 的图标(PWA Manifest 图标)
+- 避免使用`purpose: 'any maskable'`图标，因为并非所有浏览器都支持
+- 一个`favicon.ico`和`favicon.svg`， 有关更多详细信息查看[最小预设2023](#preset-minimal-2023) 
 
 ### Preset Minimal 2023 <Badge type="tip" text="新 从 v0.1.0" />
 
-Refer to [Definitive edition of "How to Favicon" in 2023](https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7) for more details.
+更多详细信息参考[Definitive edition of "How to Favicon" in 2023](https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7).
 
-Our minimal recommendation is:
+我们的最低建议是:
 
-- transparent 48x48 ico: register it in the html head: `<link rel="icon" href="/favicon.ico" sizes="48x48">`
-- Use SVG image as source image: register it in the html head: `<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">`
-- transparent 64x64 icon (PWA Manifest icon)
-- transparent 192x192 icon (PWA Manifest icon)
-- transparent 512x512 icon with `purpose: 'any'` (PWA Manifest icon)
-- white 512x512 icon with `purpose: 'maskable'` (PWA Manifest icon): background color can be customized to your needs
-- white 180x180 icon for iOS/MacOS (html head link: `<link rel="apple-touch-icon" href="/apple-touch-icon.png">`): background color can be customized to your needs
+- 透明的 48x48 图标: 在html head中注册它: `<link rel="icon" href="/favicon.ico" sizes="48x48">`
+- 使用SVG图像作为源图像: 在html head中注册它: `<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">`
+- 透明的 64x64 图标 (PWA Manifest icon)
+- 透明的 192x192 图标 (PWA Manifest icon)
+- 透明的 512x512 带有 `purpose: 'any'`图标 (PWA Manifest icon)
+- 带有 `purpose: 'maskable'`的白色 512x512 图标  (PWA Manifest icon): 背景颜色可以根据需要进行自定义
+- 用于iOS/MacOS白色 180x180 图标 (html head link: `<link rel="apple-touch-icon" href="/apple-touch-icon.png">`): 背景颜色可以根据需要进行自定义
 
 ### Preset Minimal <Badge type="danger" text="已弃用 从 v0.1.0" />
 
-Our minimal recommendation is:
+我们的最低建议是:
 
-- transparent 64x64 ico: register it in the html head: `<link rel="icon" href="/favicon.ico" sizes="any">`
-- Use SVG image as source image: register it in the html head: `<link rel="icon" href="/favicon.svg" type="image/svg+xml">`
-- transparent 64x64 icon (PWA Manifest icon)
-- transparent 192x192 icon (PWA Manifest icon)
-- transparent 512x512 icon with `purpose: 'any'` (PWA Manifest icon)
-- white 512x512 icon with `purpose: 'maskable'` (PWA Manifest icon): background color can be customized to your needs
-- white 180x180 icon for iOS/MacOS (html head link: `<link rel="apple-touch-icon" href="/apple-touch-icon.png">`): background color can be customized to your needs
+- 透明的 64x64 图标: 在html head中注册它: `<link rel="icon" href="/favicon.ico" sizes="any">`
+- 使用SVG图像作为源图像: 在html head中注册它: `<link rel="icon" href="/favicon.svg" type="image/svg+xml">`
+- 透明的 64x64 图标 (PWA Manifest icon)
+- 透明的 192x192 图标 (PWA Manifest icon)
+- 透明的 512x512 图标 带有 `purpose: 'any'` (PWA Manifest icon)
+- 带有 `purpose: 'maskable'`白色 512x512 图标 (PWA Manifest icon): 背景颜色可以根据需要进行自定义
+- 用于iOS/MacOS白色 180x180 图标 (html head link: `<link rel="apple-touch-icon" href="/apple-touch-icon.png">`): 背景颜色可以根据需要进行自定义
 
-## Example using minimal preset
+## 最小化预设使用案例
 
-You can generate icons using the `minimal-2023` preset included in [@vite-pwa/assets-generator](https://github.com/vite-pwa/assets-generator) package via a source image, check out the [CLI](/assets-generator/cli) and [API](/assets-generator/api) documentation for more details.
+通过一个源图像，您可以使用包含在[@vite-pwa/assets-generator](https://github.com/vite-pwa/assets-generator)包中的`minimal-2023`预设生成图标，请查看[CLI](/assets-generator/cli)和[API](/assets-generator/api)文档以获取更多详细信息。
 
-Update your PWA manifest icons entry with:
+更新您的PWA清单图标条目:
 
 ```ts
 icons: [
@@ -92,9 +92,9 @@ icons: [
 ];
 ```
 
-and use the following HTML head entries in your entry point:
+并在入口点HTML head中使用以下条目:
 
-### Using Preset Minimal 2023 <Badge type="tip" text="新 从 v0.1.0" />
+### 使用 Preset Minimal 2023 <Badge type="tip" text="新 从 v0.1.0" />
 
 ```html
 <head>
@@ -104,7 +104,7 @@ and use the following HTML head entries in your entry point:
 </head>
 ```
 
-### Using Preset Minimal <Badge type="danger" text="已弃用 从 v0.1.0" />
+### 使用 Preset Minimal <Badge type="danger" text="已弃用 从 v0.1.0" />
 
 ```html
 <head>

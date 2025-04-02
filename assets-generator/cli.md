@@ -5,9 +5,9 @@ outline: deep
 
 # CLI
 
-The command line interface: `@vite-pwa/assets-generator`.
-- 💥 build your PWA assets from a single command, using only 2 options: preset and source
-- 🔌 supports custom configurations via `pwa-assets.config.js` or `pwa-assets.config.ts`
+命令行接口: `@vite-pwa/assets-generator`.
+- 💥 通过单个命令构建PWA资产，仅使用2个选项：预设和源 
+- 🔌 支持自定义配置选项通过 `pwa-assets.config.js` 或者 `pwa-assets.config.ts`
 
 ## 安装
 
