@@ -6,7 +6,7 @@ title: Service Worker 简介 | 指南
 
 正如我们在[Service Worker](/guide/#service-worker)一节中提到的，Service Worker 充当代理，拦截浏览器和服务器之间的请求
 
-因为我们要将 PWA 添加到您的应用程序中，所以我们需要配置 service worker，以便您的应用程序可以离线工作。为此，我们需要配置 Service Worker 的 预缓存清单，它将包含应用程序的所有资源（基本上，我们需要告诉 Service Worker 将哪些资源存储在缓存存储中，以便它可以用于`网络请求拦截`和应用程序离线）。
+要将 PWA 添加到您的应用程序中，我们需要配置 service worker，以便您的应用程序可以离线工作。为此，我们需要配置 Service Worker 的 预缓存清单，它将包含应用程序的所有资源（基本上，我们需要告诉 Service Worker 将哪些资源存储在缓存存储中，以便它可以用于`网络请求拦截`和应用程序离线）。
 
 ::: tip 网络请求拦截
 您还可以配置如何控制任何应用程序资源的网络请求拦截
